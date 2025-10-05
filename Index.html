@@ -1,0 +1,389 @@
+q<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZURA - Modesty Meets Modernity</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons for the Menu -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom styles to ensure the layout remains fluid and uses Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fcfcfc;
+        }
+        /* Style for the fixed header container */
+        .header-top {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            z-index: 50;
+        }
+        /* Custom image placeholder styling */
+        .product-placeholder {
+            min-height: 320px; /* Consistent height for product images */
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #9ca3af;
+            font-size: 1rem;
+        }
+        /* For the hero banner image (to mimic the provided image's cover effect) */
+        .hero-bg {
+            background-image: url('man-in-white-and-light-tan-outfit 1.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .sale-bg {
+            background-image: url('download__6_-removebg-preview 1.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .member-bg {
+            background-image: url("abcd.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Top Info Bar (Black Bar - not explicitly requested to be responsive) -->
+    <div class="header-top py-2 bg-black text-white text-xs text-center tracking-wider">
+        FREE SHIPPING ON ALL ORDERS OVER $150
+    </div>
+
+    <!-- MAIN HEADER/NAVBAR -->
+    <header class="sticky top-0 bg-white border-b border-gray-100 shadow-sm z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                
+                <!-- AZURA Logo (Responsive Element 1) -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-extrabold tracking-widest text-black hover:text-gray-700 transition duration-150">AZURA</a>
+                </div>
+
+                <!-- Desktop Navigation Links (Responsive Element 2 - Hidden on Mobile) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm font-medium text-gray-700 hover:text-black tracking-wider transition duration-150">NEW DROP</a>
+                    <a href="#" class="text-sm font-medium text-gray-700 hover:text-black tracking-wider transition duration-150">ACCESSORIES</a>
+                    <a href="#" class="text-sm font-medium text-gray-700 hover:text-black tracking-wider transition duration-150">ABOUT US</a>
+                    <a href="#" class="text-sm font-medium text-gray-700 hover:text-black tracking-wider transition duration-150">CONTACT</a>
+                </nav>
+
+                <!-- Utility Icons (Search, Cart, User) -->
+                <div class="flex items-center space-x-4">
+                    <button aria-label="Search" class="p-2 rounded-full hover:bg-gray-100 transition"><i data-lucide="search" class="w-5 h-5"></i></button>
+                    <button aria-label="User Account" class="p-2 rounded-full hover:bg-gray-100 transition"><i data-lucide="user" class="w-5 h-5"></i></button>
+                    <button aria-label="Shopping Cart" class="p-2 rounded-full hover:bg-gray-100 transition"><i data-lucide="shopping-bag" class="w-5 h-5"></i></button>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-100 transition" aria-label="Open menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-b border-gray-100 shadow-lg pb-4">
+            <div class="px-2 pt-2 pb-3 space-y-2">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-black">NEW DROP</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-black">ACCESSORIES</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-black">ABOUT US</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-black">CONTACT</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section class="hero-bg relative h-[60vh] md:h-[70vh] flex items-center justify-start text-white">
+            <!-- Overlay to slightly darken the image and improve text readability -->
+            <div class= background-image "" ></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <h1 class="text-5xl md:text-7xl font-light tracking-wide mb-4">MODESTY <br> MEETS MODERNITY</h1>
+                <p class="max-w-md text-lg md:text-xl mb-8 font-light">SOFT, BREATHABLE GARMENTS THAT KEEP YOU COOL.</p>
+                <a href="man-in-white-and-light-tan-outfit 1.png" class="inline-block px-8 py-3 bg-white text-black font-semibold tracking-wider rounded-md shadow-lg hover:bg-gray-100 transition duration-300">SHOP NOW</a>
+            </div>
+        </section>
+
+        <!-- 2. NEW DROP SECTION -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-lg tracking-widest font-medium uppercase mb-8">NEW DROP</h2>
+                
+                <!-- Product Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Product Card 1 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3">
+							<img src="download-removebg-preview 1.png">
+                            
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Lightweight Oversized Hoodie</h3>
+                      <p class="text-xs text-gray-500 mb-1">Oversized Fit</p>
+<p class="text-sm font-semibold">$89.99</p>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3">
+							<img src="Neyssa_Shop___Boutique_musulmane_de_vêtements_musulman__hijab__abaya__burkini_pour_la_femme_voilée__-_Neyssa_Boutique-removebg-preview 1.png">
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Pleated Modest Dress</h3>
+                        <p class="text-xs text-gray-500 mb-1">Long Sleeve</p>
+                        <p class="text-sm font-semibold">$129.00</p>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3">
+							<img src="Abaya_with_Khimar_Set_-_Plum_-_58___Plum-removebg-preview 2.png"
+                            <span class="text-sm">Product 3</span>
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Luxe Abaya Set</h3>
+                        <p class="text-xs text-gray-500 mb-1">Premium Fabric</p>
+                        <p class="text-sm font-semibold">$159.99</p>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3">
+							<img src="Lomalab_tracksuit-removebg-preview 1.png"
+                            
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Essential Sweatpants</h3>
+                        <p class="text-xs text-gray-500 mb-1">Unisex</p>
+                        <p class="text-sm font-semibold">$65.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. SALE BANNER -->
+        <section class="sale-bg relative h-72 md:h-96 flex flex-col items-center justify-center text-white text-center">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative z-10 p-6">
+                <p class="text-base font-semibold tracking-widest uppercase mb-2">BE HURRY</p>
+                <h2 class="text-4xl md:text-6xl font-light tracking-wide mb-4">END OF SEASON SALE <br> UP TO 40% OFF</h2>
+                <p class="mb-6 font-light">FOR SELECTED COLLECTIONS</p>
+                <a href="#" class="inline-block px-8 py-3 border-2 border-white text-white font-semibold tracking-wider rounded-md hover:bg-white hover:text-black transition duration-300">SHOP THE COLLECTION</a>
+            </div>
+        </section>
+
+        <!-- 4. EXPLORE THIS COLLECTION SECTION -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-lg tracking-widest font-medium uppercase mb-8">EXPLORE THIS COLLECTION</h2>
+                
+                <!-- Product Grid (Similar structure as New Drop) -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Product Card 5 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 bg-gray-200">
+						  <img src="image.png">
+                           
+                      </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Utility Track Suit</h3>
+                        <p class="text-xs text-gray-500 mb-1">Khaki Green</p>
+                        <p class="text-sm font-semibold">$145.00</p>
+                    </div>
+                    <!-- Product Card 6 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 bg-gray-200">
+						  <img src="download__4_-removebg-preview 1.png">
+                            <span class="text-sm">Collection Item 2</span>
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Heavyweight Joggers</h3>
+                        <p class="text-xs text-gray-500 mb-1">Stone Gray</p>
+                        <p class="text-sm font-semibold">$75.00</p>
+                    </div>
+                    <!-- Product Card 7 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 bg-gray-200">
+							<img src="Abaya_with_Khimar_Set_-_Plum_-_58___Plum-removebg-preview 2.png">
+                            
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Relaxed Cardigan</h3>
+                        <p class="text-xs text-gray-500 mb-1">Oatmeal</p>
+                        <p class="text-sm font-semibold">$95.00</p>
+                    </div>
+                    <!-- Product Card 8 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 bg-gray-200">
+							<img src="download__5_-removebg-preview 1.png">
+                            
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Wide-Leg Culottes</h3>
+                        <p class="text-xs text-gray-500 mb-1">Cocoa Brown</p>
+                        <p class="text-sm font-semibold">$85.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. MEMBERSHIP BANNER -->
+        <section class="member-bg relative h-80 flex flex-col items-start justify-center text-white">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+                <h2 class="text-3xl md:text-5xl font-light tracking-wide mb-3">BECOME A MEMBER <br> OF AZURA & GET</h2>
+                <p class="text-xl font-bold mb-6">15% OFF</p>
+                <a href="#" class="inline-block px-8 py-3 bg-white text-black font-semibold tracking-wider rounded-md shadow-lg hover:bg-gray-100 transition duration-300">SIGN UP FOR FREE</a>
+            </div>
+        </section>
+
+        <!-- 6. ACCESSORIES SECTION -->
+        <section class="py-16 md:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-lg tracking-widest font-medium uppercase mb-8">ACCESSORIES</h2>
+                
+                <!-- Product Grid (4 items wide, like the image) -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 lg:gap-8">
+                    <!-- Accessory Card 1 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 h-64 bg-gray-100">
+							<img src="image-removebg-preview - 2025-01-19T155336,231_enhanced.png">
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Logo Baseball Cap</h3>
+                        <p class="text-xs text-gray-500 mb-1">Dark Navy</p>
+                        <p class="text-sm font-semibold">$35.00</p>
+                    </div>
+                    <!-- Accessory Card 2 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 h-64 bg-gray-100">
+							<img src="image-removebg-preview - 2025-01-19T155703,690_enhanced.png">
+                            
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Everyday Backpack</h3>
+                        <p class="text-xs text-gray-500 mb-1">Black Canvas</p>
+                        <p class="text-sm font-semibold">$80.00</p>
+                    </div>
+                    <!-- Accessory Card 3 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 h-64 bg-gray-100">
+							<img src="The_Raf_Simons_x_adidas_Adilette_Is_the_Summer_Slide_You_Need-removebg-preview_enhanced.png">
+                            
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Comfort Slides</h3>
+                        <p class="text-xs text-gray-500 mb-1">Black Leather</p>
+                        <p class="text-sm font-semibold">$55.00</p>
+                    </div>
+                    <!-- Accessory Card 4 -->
+                    <div class="group">
+                        <div class="product-placeholder rounded-md overflow-hidden mb-3 h-64 bg-gray-100">
+							<img src="Stanley_30_oz__IceFlow_Flip_Straw_Tumbler-removebg-preview_enhanced.png">
+                           
+                        </div>
+                        <h3 class="text-sm font-medium truncate mb-1">Insulated Tumbler</h3>
+                        <p class="text-xs text-gray-500 mb-1">Matte Black</p>
+                        <p class="text-sm font-semibold">$25.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white mt-12 py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-8 border-b border-gray-700 pb-8 mb-8">
+                <!-- Column 1: Custom Company Info (Mimicking the structure) -->
+                <div>
+                    <h4 class="text-sm font-bold tracking-wider mb-4 uppercase">AZURA CUSTOMER CARE</h4>
+                    <p class="text-xs text-gray-400 mb-2">Need help? Email us:</p>
+                    <p class="text-sm font-medium hover:text-white transition duration-150">support@azura.com</p>
+                    <div class="mt-4">
+                        <p class="text-xs text-gray-400 mb-1">Mon - Fri, 9am - 5pm EST</p>
+                        <p class="text-xs text-gray-400">Call: (555) 123-4567</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: SHOP -->
+                <div>
+                    <h4 class="text-sm font-bold tracking-wider mb-4 uppercase">SHOP</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition duration-150">New Arrivals</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Modestwear</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Outerwear</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Sale</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: HELP -->
+                <div>
+                    <h4 class="text-sm font-bold tracking-wider mb-4 uppercase">HELP</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition duration-150">FAQs</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Shipping & Returns</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Size Guide</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">My Account</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: ABOUT -->
+                <div>
+                    <h4 class="text-sm font-bold tracking-wider mb-4 uppercase">ABOUT</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="#" class="hover:text-white transition duration-150">Our Story</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition duration-150">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: JOIN US -->
+                <div class="col-span-2 md:col-span-1">
+                    <h4 class="text-sm font-bold tracking-wider mb-4 uppercase">JOIN US</h4>
+                    <p class="text-xs text-gray-400 mb-4">Subscribe to get 15% off your first order.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Enter your email" class="p-3 w-full text-sm text-gray-900 rounded-l-md focus:ring-0 focus:outline-none" aria-label="Email subscription">
+                        <button class="px-4 py-3 bg-green-500 text-sm font-semibold text-white rounded-r-md hover:bg-green-600 transition duration-150">SUBMIT</button>
+                    </div>
+                    
+                    <!-- Social Icons -->
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" aria-label="Instagram" class="hover:text-green-500 transition duration-150"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Facebook" class="hover:text-green-500 transition duration-150"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" aria-label="Twitter" class="hover:text-green-500 transition duration-150"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright and Legal Links -->
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2024 AZURA. All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-4">
+                    <a href="#" class="hover:text-white transition duration-150">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition duration-150">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons(); // Initialize Lucide Icons
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // Toggle function for the mobile navigation menu (Responsive Element 2)
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                
+                // Optional: Change icon from 'menu' to 'x' when open
+                const icon = mobileMenuButton.querySelector('svg');
+                if (mobileMenu.classList.contains('hidden')) {
+                    icon.outerHTML = lucide.icons.menu.toSvg({ class: 'w-6 h-6' });
+                } else {
+                    icon.outerHTML = lucide.icons.x.toSvg({ class: 'w-6 h-6' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
